@@ -47,5 +47,5 @@ function write_aws_saml_credentials {
 # Write credentials on load if possible
 write_aws_saml_credentials
 
-# Make .aws directory to store credentials
-mkdir -p ~/.aws
+# In case it wasn't created before, for syncing AWS creds
+mkdir -p $HOME/.aws

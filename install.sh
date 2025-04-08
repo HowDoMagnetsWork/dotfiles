@@ -24,5 +24,5 @@ zshrc() {
 
 zshrc
 
-cp .jackrc $HOME/.jackrc
-echo "source $HOME/.jackrc" >> $HOME/.bashrc
+cp .scottrc $HOME/.scottrc
+echo "source $HOME/.scottrc" >> $HOME/.bashrc
