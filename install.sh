@@ -24,5 +24,10 @@ zshrc() {
 
 zshrc
 
+echo "==========================================================="
+echo "                  Copy personal.py                         "
+echo "-----------------------------------------------------------"
+cp /workspaces/.codespaces/.persistedshare/dotfiles/personal.py /workspaces/web/src/aplaceforrover/rover/settings/personal.py
+
 cp .scottrc $HOME/.scottrc
 echo "source $HOME/.scottrc" >> $HOME/.bashrc
