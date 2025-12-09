@@ -47,5 +47,11 @@ function write_aws_saml_credentials {
 # Write credentials on load if possible
 write_aws_saml_credentials
 
+# Personal SSH key sync (used for replica access)
+if [ -n "${PERSONAL_SSH_KEY}" ]
+then
+   printenv PERSONAL_SSH_KEY > ~/.ssh/id_rsa
+fi
+
 # In case it wasn't created before, for syncing AWS creds
 mkdir -p $HOME/.aws
