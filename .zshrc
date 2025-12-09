@@ -53,5 +53,8 @@ then
    printenv PERSONAL_SSH_KEY > ~/.ssh/id_rsa
 fi
 
+# Custom Aliases
+alias replicas="m shell_plus --use-production-replica --use-orders-production-replica"
+
 # In case it wasn't created before, for syncing AWS creds
 mkdir -p $HOME/.aws
